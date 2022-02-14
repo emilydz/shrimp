@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>Glub</title>
+            <style>
+                .card {
+                    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                    padding: 16px;
+                    text-align: center;
+                    font-family: 'Courier New', Courier, monospace;
+                    max-width: 600px;
+                    margin: auto;
+                    margin-bottom: 40px;
+                }
+                .card button {
+                    border: none;
+                    outline: 0;
+                    padding: 12px;
+                    color: white;
+                    background-color: grey;
+                    text-align: center;
+                    cursor: pointer;
+                    width: 50%;
+                    font-size: 20px;
+                }
+                .card button:hover {
+                  
+                  background-color: #d76141;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="card">
+                <img src="images/glub.jpg" alt="Funny cat picture" style="width:100%">
+                <h1>Oops turns out I'm a cat and can't engage in commerce!</h1>
+                <button onclick="goBack()">Back</button>
+        <!-- go back script -->
+            <script>
+                function goBack() {
+                    window.history.back();
+                }
+            </script>
+        </body>
+    </html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>Shrimp's Products</title>
+            <style>
+            /* border box reset */
+                * {
+                    box-sizing: border-box;
+                }
+
+            /* style header */
+                #header {
+                    top: 0;
+                    left: 0;
+                    background-color:white;
+                    color: white;
+                    width: 100%;
+                    padding: 10px;
+                    font-size: 20px;
+                
+                }
+
+            /* style navigation */    
+                ul {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    overflow: hidden;
+                }
+
+                li {
+                    float: left;
+                
+                }
+
+                li a {
+                    font-family:'Courier New', Courier, monospace;
+                    display: block;
+                    color: black;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                }
+
+                li a:hover {
+                    background-color: #d76141;
+                }
+            
+            /* welcome card */
+                #welcomecard {
+                    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                    padding: 16px;
+                    text-align: center;
+                    font-family: 'Courier New', Courier, monospace;
+                    max-width: 600px;
+                    margin: auto;
+                    margin-bottom: 40px;
+                }
+
+                h1 {
+                    font-size: 40px;
+                    font-family: "Arial Black", Gadget, sans-serif;
+                }
+
+            /* responsive columns for cards */
+                .column {
+                    float: left;
+                    width: 33.33%;
+                    padding: 0 10px;
+                }
+
+                .row {
+                    margin: 5 -5px;
+                }
+
+                .row:after {
+                    content: "";
+                    display: table;
+                    clear: both;
+                }
+
+                @media screen and (max-width: 800px) {
+                    .column {
+                        width: 100%;
+                        display: block;
+                        margin-bottom:20px;
+                    }
+                }
+
+            /* cards for products */
+                .card {
+                    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                    padding: 16px;
+                    text-align: center;
+                    font-family: 'Courier New', Courier, monospace;
+                }
+
+                .price {
+                    color: slategray;
+                    font-size: 22px;
+                }
+
+                .card button {
+                    border: none;
+                    padding: 30px;
+                    color: white;
+                    background-color: slategray;
+                    text-align: center;
+                    cursor: pointer;
+                    font-size: 20px;
+                    border-radius: 50%;
+                    font-family: "Arial Black", Gadget, sans-serif;
+
+                }
+
+                .card button:hover {
+                  
+                    background-color: #d76141;
+                }
+            
+            /* text */
+                p {
+                    letter-spacing: 3px;
+                }
+
+            </style>
+        </head>
+        <body>
+        <!-- header -->
+            <header id="header">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="products.html">Products</a></li>
+                    </ul>
+                </nav>     
+            </header>
+        <!-- begin main -->
+            <main>
+            <!-- welcome -->
+                <section id="welcomecard">
+                    <h1>Welcome</h1>
+                        <p>At Shrimp's Shop, we sell high quality seafood goods that will satisfy you right meow.</p>
+                </section>
+            <!-- create row -->
+                <div class="row">
+                <!-- product 1/create column -->
+                    <article class="column">
+                        <div class="card">
+                            <img src="images/salmon.png" alt="Salmon" style="width:100%">
+                            <p class="price">Prices Vary</p>
+                            <p>Fresh salmon sent to your door!</p>
+                            <p><a href="glub.html"><button>Buy</button></a></p>
+                        </div>
+                    </article>
+                <!-- product 2/create column -->
+                    <article class="column">
+                        <div class="card">
+                            <img src="images/tuna.png" alt="Tuna" style="width:100%">
+                            <p class="price">Prices Vary</p>
+                            <p>The sweet taste of tuna!</p>
+                            <p><a href="glub.html"><button>Buy</button></a></p>
+                        </div>
+                    </article>
+                <!--product 3/create column-->
+                    <article class="column">
+                        <div class="card">
+                            <img src="images/shrimp.png" alt="Shrimp" style="width:100%">
+                            <p class="price">Prices Vary</p>
+                            <p>Where it all started.</p>
+                            <p><a href="glub.html"><button>Buy</button></a></p>
+                        </div>
+                    </article>
+                </div>
+            </main>
+        </body>
+    </html>
